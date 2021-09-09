@@ -1,0 +1,50 @@
+{
+  "name": "micro-semaphore",
+  "version": "1.0.0",
+  "description": "Barebones semaphore",
+  "main": "index.js",
+  "author": "Adam Jenkins",
+  "license": "MIT",
+  "browser": "build/bundle.min.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akmjenkins/micro-semaphore"
+  },
+  "bugs": {
+    "url": "https://github.com/akmjenkins/micro-semaphore/issues"
+  },
+  "keywords": [
+    "mutex",
+    "semaphore"
+  ],
+  "files": [
+    "build",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "yarn clean && rollup -c",
+    "lint": "eslint index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.3",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
