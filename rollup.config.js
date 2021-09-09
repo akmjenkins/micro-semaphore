@@ -1,3 +1,4 @@
+import { terser } from 'rollup-plugin-terser';
 export default {
   input: 'index.js',
   output: [
@@ -6,6 +7,7 @@ export default {
       file: 'build/bundle.min.js',
       format: 'iife',
       name: 'createSemaphore',
+      plugins: [terser()],
     },
   ],
 };

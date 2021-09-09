@@ -1,3 +1,3 @@
-export default function createSemaphor(n?: number): {
+export default function createSemaphore(n?: number): {
   then: <R>(func?: () => R) => Promise<R>;
 };

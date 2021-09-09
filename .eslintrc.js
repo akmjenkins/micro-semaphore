@@ -1,4 +1,5 @@
 module.exports = {
+  parser: 'babel-eslint',
   env: {
     es6: true,
     node: true,
@@ -7,13 +8,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        paths: ['./src'],
-      },
-    },
   },
   extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   rules: {

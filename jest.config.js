@@ -1,5 +1,8 @@
 module.exports = {
-  transform: { '^.+\\.ts?$': 'ts-jest' },
+  transform: {
+    '^.+\\.jsx?$': require.resolve('babel-jest'),
+    '^.+\\.ts?$': 'ts-jest',
+  },
   collectCoverageFrom: ['index.js'],
   coverageThreshold: {
     global: {

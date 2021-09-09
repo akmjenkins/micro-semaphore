@@ -1,4 +1,4 @@
-module.exports = (capacity, q = []) => {
+export default (capacity, q = []) => {
   let n = capacity || 1;
   const process = () => (q = q.filter((r) => !n || r(--n)));
   const done = (a) => (process(n++), a);
